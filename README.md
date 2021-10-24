@@ -1,0 +1,2 @@
+# vk-apps-currency
+ 
