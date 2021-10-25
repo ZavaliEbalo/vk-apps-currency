@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Stack, Page, Tabbar } from "vkui-navigator/dist";
+import { Stack, Page, Tabbar } from "@vkontakte/vkui";
 
 import Panel1 from "./panels/Panel1";
 import Panel2 from "./panels/Panel2";
