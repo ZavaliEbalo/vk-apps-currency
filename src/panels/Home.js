@@ -3,26 +3,16 @@ import PropTypes from 'prop-types';
 
 import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
 
-const Home = ({ id, go, fetchedUser }) => (
+const Home = props => (
 	<Panel id={id}>
-		<PanelHeader>Example</PanelHeader>
-		{fetchedUser &&
-		<Group header={<Header mode="secondary">Создатель приложения</Header>}>
-			<Cell
-				before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
-				description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
-			>
-				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
-			</Cell>
-		</Group>}
-
-		<Group header={<Header mode="secondary">Пример ЭКЗЕМПЛА</Header>}>
-			<Div>
-				<Button stretched size="l" mode="secondary" onClick={go} data-to="persik">
-					ПОКАЖИТЕ МУРМЯШНОГО КОТЕЙКУ, ПОЖАЛУЙСТА
-				</Button>
-			</Div>
-		</Group>
+		<PanelHeader>Text</PanelHeader>
+    <Group>
+      <Div>
+        <Text weight="regular" style={{ marginBottom: 16 }}>Text regular</Text>
+        <Text weight="medium" style={{ marginBottom: 16 }}>Text medium</Text>
+        <Text weight="semibold">Text semibold</Text>
+      </Div>
+    </Group>
 	</Panel>
 );
 
